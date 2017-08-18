@@ -9,6 +9,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msft.Azure.Event.Subscriber
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msft.Event.Core", "Msft.Event.Core\Msft.Event.Core.csproj", "{FB5ADC14-55CD-4649-BAC6-8F73774EE504}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{E3BBAA50-7BB3-47EF-B21E-08C4644F6D4C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "image", "image", "{05A5C1A1-8FDB-4FB5-8E85-582D8DA65E4F}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\images\AzureEventGrid.png = Documentation\images\AzureEventGrid.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +40,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05A5C1A1-8FDB-4FB5-8E85-582D8DA65E4F} = {E3BBAA50-7BB3-47EF-B21E-08C4644F6D4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E92035D9-BEDD-4ED8-A5A4-B22B9BD2F0E8}

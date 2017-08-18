@@ -17,9 +17,9 @@ namespace Msft.Event {
         }
 
         private static async Task<HttpResponseMessage> MakeRequestEvent() {
-            string url = "https://testtopic.westus2-1.eventgrid.azure.net/api/events";
+            string endpoint = "[endpoint]";
             var httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Add("aeg-sas-key", "atwDzveWm24AnBH3knXEllrwDbvo83Pe4P0LLtNNYrY=");
+            httpClient.DefaultRequestHeaders.Add("aeg-sas-key", "[key]");
 
             List<CustomEvent<Account>> events = new List<CustomEvent<Account>>();
 
@@ -36,7 +36,7 @@ namespace Msft.Event {
 
             var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-            return await httpClient.PostAsync(url, content);            
+            return await httpClient.PostAsync(endpoint, content);            
         }
     }
 }

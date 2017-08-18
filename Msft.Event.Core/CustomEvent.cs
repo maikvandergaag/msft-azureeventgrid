@@ -14,7 +14,7 @@ namespace Msft.Event.Core {
         public T Data { get; set; }
 
         public CustomEvent(){
-            Id = DateTime.Now.Ticks.ToString();
+            Id = Guid.NewGuid().ToString();
 
             DateTime localTime = DateTime.Now;
             DateTime utcTime = DateTime.UtcNow;
